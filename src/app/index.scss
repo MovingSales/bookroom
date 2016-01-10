@@ -47,7 +47,9 @@
 html {
   font-family: 'Roboto Slab', serif;
 }
-
+body {
+  background-color: rgb(246,247,245)
+}
 [layout=row] {
   flex-direction: row;
 }
@@ -66,7 +68,10 @@ md-toolbar.md-default-theme {
 section.jumbotron {
   margin-bottom: 30px;
   padding: 1px 30px;
-  background-color: #5aadbb;
+  background-image: url('../assets/images/children_colourful_kids.jpg');
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
   text-align: center;
 
   color: white;
