@@ -1,0 +1,49 @@
+
+.landing-page-jumbotron-content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: black;
+  h1 {
+    font-size: 2em;
+    color: rgb(149,37,163);
+    .left{
+      color: rgb(97,216,246)
+    }
+  };
+  .logo-space {
+    background-color: #f6f7f9 !important;
+    padding: 1em 2em;
+    margin: 2em;
+    border: 150px solid rgba(150, 155, 255, .2);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box;
+    border-radius: 0px;
+  }
+}
+.landing-page-jumbotron-content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url('../../assets/images/children_colourful_kids.jpg');
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+
+  width: 100%;
+  height: 100%;
+
+  webkit-filter: brightness(600%);
+  -moz-filter: brightness(600%);
+  -o-filter:brightness(600%);
+  -ms-filter: brightness(600%);
+  filter: brightness(600%);
+
+}

@@ -19,7 +19,7 @@
       .state('landing', {
         parent: 'root',
         url: '/',
-        templateUrl: 'app/main/main.html',
+        templateUrl: 'app/landing/landing.html',
         controller: 'MainController',
         controllerAs: 'main'
       });
