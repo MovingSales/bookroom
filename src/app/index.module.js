@@ -12,7 +12,9 @@
         'ngAria',
         'ui.router',
         'ngMaterial',
-        'toastr'
+        'toastr',
+
+        'sysUsers'
       ]
     );
 
