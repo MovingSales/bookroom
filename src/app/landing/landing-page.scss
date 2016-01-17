@@ -1,49 +1,37 @@
-
-.landing-page-jumbotron-content {
+.landing-page-leaf{
+  content: "";
   position: fixed;
   left: 0;
   right: 0;
   z-index: 0;
   margin-left: 20px;
   margin-right: 20px;
-  color: black;
+  color: white;
   h1 {
-    font-size: 2em;
-    color: rgb(149,37,163);
+    font:  1.5em  'Lobster', cursive;
+    color: #f1f1f1;
+    font-size: 3em;
     .left{
-      color: rgb(97,216,246)
+      color: gold;
     }
-  };
-  .logo-space {
-    background-color: rgb(246,247,249)  !important;
-    padding: 1em 2em;
-    margin: 5em;
-    border: 150px solid rgba(255,217,0, .3);
-    -webkit-background-clip: padding-box; /* for Safari */
-    background-clip: padding-box;
-    border-radius: 0px;
   }
 }
-.landing-page-jumbotron-content:before {
+
+.landing-page-leaf:before{
   content: "";
   position: fixed;
   left: 0;
   right: 0;
   z-index: -1;
 
-  display: block;
-  background-image: url('../../assets/images/children_colourful_kids.jpg');
+  background-image: url('../../assets/images/photo-1444730558009-b7f0368e1264.jpg');
   background-size:     cover;
   background-repeat:   no-repeat;
   background-position: center center;
+  padding: 10em 5em;
 
+  min-height: 100%;
   width: 100%;
-  height: 100%;
 
-  webkit-filter: brightness(600%);
-  -moz-filter: brightness(600%);
-  -o-filter:brightness(600%);
-  -ms-filter: brightness(600%);
-  filter: brightness(700%);
-
+  filter: invert(35%)
 }

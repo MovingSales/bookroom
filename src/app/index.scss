@@ -6,7 +6,6 @@
 // endbower
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
-
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -62,7 +61,7 @@ body {
 }
 
 md-toolbar.md-default-theme {
-  background-color: black;
+  background-color: black !important;
 }
 
 section.jumbotron {
@@ -115,6 +114,10 @@ section.jumbotron {
 md-input-container.stretched, md-autocomplete.stretched {
   width: 95%;
 }
+
+/***
+
+*****/
 
 /**
  *  Do not remove the comment below. It's the markers used by gulp-inject to inject
