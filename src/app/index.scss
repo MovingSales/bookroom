@@ -63,7 +63,14 @@ body {
 md-toolbar.md-default-theme {
   background-color: black !important;
 }
-
+.brand-name {
+  font:  1em  'Lobster', cursive;
+  color: #2db8f6;
+  .left{
+    font: 1em 'roboto', cursive;
+    color: gold;
+  }
+}
 section.jumbotron {
   margin-bottom: 30px;
   padding: 1px 30px;
