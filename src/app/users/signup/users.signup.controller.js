@@ -7,6 +7,6 @@
   };
 
   angular.module('sysUsers')
-    .controller('UserSignUpCtrl', signUpCtrl);
+    .controller('UserSignUpController', signUpCtrl);
 
 })();
