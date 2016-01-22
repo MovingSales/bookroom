@@ -13,7 +13,6 @@
         'ui.router',
         'ngMaterial',
         'toastr',
-        'pouchdb',
         'sysUsers'
       ]
     );

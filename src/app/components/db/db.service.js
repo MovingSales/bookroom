@@ -14,20 +14,25 @@
 
     };
 
-    _this.save = function (doc){
+    _this.save = function (){
 
     };
 
-    _this.saveMany = function (docs){
+    _this.saveMany = function (){
 
     };
 
-    _this.update = function (doc){
+    _this.update = function (){
 
     };
 
-    _this.delete = function (doc){
+    _this.delete = function (){
 
     }
   }
-});
+
+  if(angular){
+    angular.module('db')
+      .service('dbService', dbService)
+  }
+})();
