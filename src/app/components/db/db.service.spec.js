@@ -7,8 +7,6 @@ describe('db service', function(){
 
   beforeEach(inject(function (_dbService_){
     dbService = _dbService_;
-
-    spyOn(pouchDB, 'get').andCallThrough();
   }));
 
   it('should expose a get function', function (){
