@@ -10,7 +10,7 @@
     };
 
     _service.getSession = function (){
-
+      return db.getSession();
     };
 
     _service.signup = function (username, password){
@@ -25,8 +25,8 @@
       return db.logout();
     };
 
-    _service.changePassword = function (){
-
+    _service.changePassword = function (username, password){
+      return db.changePassword(username, password);
     }
   };
 
