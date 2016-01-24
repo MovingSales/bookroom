@@ -5,30 +5,30 @@
       Create account
     </md-subheader>
     <md-divider></md-divider><br/>
-    <form ng-submit="signupCtrl.register()">
+    <form ng-submit="regCtrl.signup()">
       <md-input-container class="md-icon-float md-block">
         <!-- Use floating label instead of placeholder -->
         <label>Name</label>
         <md-icon md-svg-src="assets/images/icons/ic_person_black_24px.svg" class="name"></md-icon>
-        <input ng-model="user.name" type="text">
+        <input ng-model="regCtrl.user.name" type="text">
       </md-input-container>
       <md-input-container class="md-icon-float md-block">
         <!-- Use floating label instead of placeholder -->
         <label>Email</label>
         <md-icon md-svg-src="assets/images/icons/ic_email_black_24px.svg" class="name"></md-icon>
-        <input ng-model="user.name" type="text">
+        <input ng-model="regCtrl.user.email" type="email">
       </md-input-container>
       <md-input-container class="md-icon-float md-block">
         <!-- Use floating label instead of placeholder -->
         <label>Password</label>
         <md-icon md-svg-src="assets/images/icons/ic_lock_black_24px.svg" class="name"></md-icon>
-        <input ng-model="user.name" type="text">
+        <input ng-model="regCtrl.user.password" type="password">
       </md-input-container>
       <md-input-container class="md-icon-float md-block">
         <!-- Use floating label instead of placeholder -->
         <label>Re-Password</label>
         <md-icon md-svg-src="assets/images/icons/ic_lock_black_24px.svg" class="name"></md-icon>
-        <input ng-model="user.name" type="text">
+        <input ng-model="regCtrl.user.re_password" type="password">
       </md-input-container>
       <md-button type="submit" class="md-block md-warn">Submit</md-button>
     </form>
