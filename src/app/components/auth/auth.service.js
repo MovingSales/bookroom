@@ -16,12 +16,12 @@
       return db.signup(username, password)
     };
 
-    _service.login = function (){
-
+    _service.login = function (username, password){
+      return db.login(username, password);
     };
 
     _service.logout = function (){
-
+    
     };
 
     _service.changePassword = function (){
