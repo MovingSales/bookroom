@@ -3,7 +3,7 @@
 var signupConfig = {
   parent: 'defaultView',
   url: '/signup',
-  templateUrl: 'app/users/signup/signup.html',
+  templateUrl: 'app/users/partials/signup.html',
   controller: 'UserSignUpController as regCtrl'
 }
 
