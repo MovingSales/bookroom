@@ -4,7 +4,7 @@
 
 
 
-  var userService = function (pouchDB){
+  var userService = function (authService){
 
 
   };
