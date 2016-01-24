@@ -1,4 +1,10 @@
-'use strict';
 
-angular.module('db', [
-])
+(function (){
+  'use strict';
+
+  angular.module('db', [
+    'pouchdb'
+  ])
+})();
+
+

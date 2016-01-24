@@ -2,7 +2,7 @@
 
   'use strict';
 
-  var signUpCtrl = function (){
+  var signUpCtrl = function (userService){
 
   };
 
