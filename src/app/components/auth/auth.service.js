@@ -6,6 +6,7 @@
     var db = dbService.exportInstance();
 
     _service.getUser = function (){
+      return db.getUser();
     };
 
     _service.getSession = function (){
