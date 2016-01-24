@@ -6,7 +6,7 @@
 
   var userService = function (authService){
 
-
+    //authService.check()
   };
 
   if(angular){

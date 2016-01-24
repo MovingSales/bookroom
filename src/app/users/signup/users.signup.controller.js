@@ -2,8 +2,9 @@
 
   'use strict';
 
-  var signUpCtrl = function (userService){
+  var signUpCtrl = function (userService, authService){
 
+    var vm = this;
   };
 
   angular.module('sysUsers')
