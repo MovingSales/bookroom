@@ -21,7 +21,7 @@
     };
 
     _service.logout = function (){
-    
+      return db.logout();
     };
 
     _service.changePassword = function (){
@@ -34,4 +34,4 @@
     angular.module('Auth')
       .service('authService', authService)
   }
-})()
+})();
