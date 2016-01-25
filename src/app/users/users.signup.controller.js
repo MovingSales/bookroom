@@ -10,7 +10,7 @@
     vm.signup = function (){
       authService.signup(vm.user.email, vm.user.password)
         .then(function (response){
-          console.info(response);
+          return authService.login(vm.user.email, vm.user.password)
         })
         .catch(function (err) {
           console.error(err);
