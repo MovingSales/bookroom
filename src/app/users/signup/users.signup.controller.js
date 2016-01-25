@@ -2,11 +2,11 @@
 
   'use strict';
 
-  var signUpCtrl = function (){
+  var signUpCtrl = function (userService){
 
   };
 
   angular.module('sysUsers')
-    .controller('UserSignUpCtrl', signUpCtrl);
+    .controller('UserSignUpController', signUpCtrl);
 
 })();

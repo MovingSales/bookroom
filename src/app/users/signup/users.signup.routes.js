@@ -4,6 +4,7 @@ var signupConfig = {
   parent: 'defaultView',
   url: '/signup',
   templateUrl: 'app/users/signup/signup.html',
+  controller: 'UserSignUpController as regCtrl'
 }
 
 angular.module('sysUsers')
