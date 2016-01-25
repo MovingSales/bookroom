@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {
+    "wiredep": "wiredep --verbose --bowerJson bower.json --src src/index.html",
     "test": "gulp test"
   },
   "devDependencies": {
@@ -51,8 +52,5 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-  "scripts": {
-    "wiredep": "wiredep --verbose --bowerJson bower.json --src common/index.html"
   }
 }
