@@ -51,5 +51,8 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "scripts": {
+    "wiredep": "wiredep --verbose --bowerJson bower.json --src common/index.html"
   }
 }
