@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {
-    "test": "gulp test",
-    "wiredep": "wiredep --verbose --bowerJson bower.json --src src/index.html"
+    "test": "gulp test"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",
