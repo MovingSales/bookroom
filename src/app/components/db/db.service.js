@@ -3,7 +3,7 @@
   'use strict';
 
   var dbService = function (pouchDB){
-    var db = pouchDB('localhost:5984/bookroom');
+    var db = pouchDB('http://localhost:5984/bookroom');
 
     var _this = this;
 

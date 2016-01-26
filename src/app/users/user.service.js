@@ -4,9 +4,9 @@
 
 
 
-  var userService = function (pouchDB){
+  var userService = function (authService){
 
-
+    //authService.check()
   };
 
   if(angular){

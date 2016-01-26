@@ -13,7 +13,9 @@
         'ui.router',
         'ngMaterial',
         'toastr',
-        'sysUsers'
+        'sysUsers',
+        'db',
+        'Auth'
       ]
     );
 
