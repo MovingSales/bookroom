@@ -52,7 +52,7 @@
   "scripts": {
     "bower": "bower install",
     "wiredep": "wiredep --verbose --bowerJson bower.json --src src/index.html",
-    "test": "gulp test"
+    "test": "gulp test",
     "pretest": "npm run bower && npm run wiredep"
   }
 }
