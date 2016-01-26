@@ -4,7 +4,7 @@
   "dependencies": {},
   "scripts": {
     "test": "gulp test",
-    "wiredep": "wiredep --verbose --bowerJson bower.json --src src/index.html"
+    "wiredep": "wiredep --verbose --bowerJson bower.json --src common/index.html"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",
