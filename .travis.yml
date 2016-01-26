@@ -1,4 +1,10 @@
 sudo: false
+notifications:
+  email:
+    recipients:
+      - freefony@gmail.com
+    on_success: change
+    on_failure: change
 language: node_js
 
 node_js:
