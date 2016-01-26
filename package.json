@@ -50,7 +50,6 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "gulp test",
-    "wiredep": "wiredep -s src/index.html"
+    "test": "gulp test"
   }
 }
