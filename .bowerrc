@@ -1,6 +1,6 @@
 {
   "directory": "bower_components",
   "scripts": {
-    "postinstall": "wiredep -s index.html"
+    "postinstall": "wiredep -s src/index.html"
   }
 }
