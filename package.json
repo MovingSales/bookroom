@@ -2,6 +2,9 @@
   "name": "bookroom",
   "version": "0.0.0",
   "dependencies": {},
+  "scripts": {
+    "test": "gulp test",
+  },
   "devDependencies": {
     "estraverse": "~4.1.0",
     "gulp": "~3.9.0",
@@ -50,7 +53,6 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "gulp test",
     "wiredep": "wiredep --verbose --bowerJson bower.json --src src/index.html"
   }
 }
