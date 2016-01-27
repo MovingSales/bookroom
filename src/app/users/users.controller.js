@@ -10,7 +10,7 @@
     vm.signup = function (){
       authService.signup(vm.user.email, vm.user.password)
         .then(function (){
-          return authService.login(vm.user.email, vm.user.password)
+          return vm.signin(vm.user.email, vm.user.password)
         })
         .catch(function (err) {
           console.error(err);
@@ -23,7 +23,7 @@
           $state.go('home')
         })
         .catch(function (err){
-          console.log(err);
+          console.error(err);
         })
     }
   };
