@@ -4,12 +4,12 @@ var signupConfig = {
   parent: 'defaultView',
   url: '/signup',
   templateUrl: 'app/users/signup.html',
-  controller: 'UserSignUpController as regCtrl'
+  controller: 'UsersController as regCtrl'
 }
 
 var login = {
   parent: 'defaultView',
-  url: '/signup',
+  url: '/login',
   templateUrl: 'app/users/login.html',
   controller: 'UsersController'
 }
