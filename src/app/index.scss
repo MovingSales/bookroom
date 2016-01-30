@@ -61,7 +61,7 @@ body {
 }
 
 md-toolbar.md-default-theme {
-  background-color: black !important;
+  background-color: #346cae !important;
 }
 .brand-name {
   font:  1em  'Lobster', cursive;
@@ -104,11 +104,11 @@ section.jumbotron {
 .material-icons.md-48 { font-size: 48px; }
 
 // Rules for using icons as black on a light background.
-.material-icons.md-dark {
-  color: rgba(0, 0, 0, 0.54);
+.material-icons.md-dark, md-icon.md-dark {
+  color: rgb(52,108,174);
 }
-.material-icons.md-dark.md-inactive {
-  color: rgba(0, 0, 0, 0.26);
+.material-icons.md-dark.md-inactive, md-icon.md-dark.md-inactive {
+  color: rgb(52,108,174);
 }
 
 // Rules for using icons as white on a dark background.
