@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('sysUsers', ['pouchdb']);
+  angular.module('sysUsers', ['pouchdb', 'ui.validate']);
 })();
 
 

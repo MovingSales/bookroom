@@ -2,10 +2,14 @@
 
   'use strict';
 
-  var signUpCtrl = function (userService, authService, $state){
+  var signUpCtrl = function (userService, authService, $state, $log){
 
     var vm = this;
     vm.user = {};
+
+    vm.canSignup = function (){
+      return (vm.user.password === vm.user.re_password) && (vm.user.password === vm.user.re_password);
+    };
 
     vm.signup = function (){
       authService.signup(vm.user.email, vm.user.password)
@@ -13,7 +17,7 @@
           return vm.signin(vm.user.email, vm.user.password)
         })
         .catch(function (err) {
-          console.error(err);
+          $log.error(err);
         })
     };
 
@@ -23,7 +27,7 @@
           $state.go('home')
         })
         .catch(function (err){
-          console.error(err);
+          $log.error(err);
         })
     }
   };

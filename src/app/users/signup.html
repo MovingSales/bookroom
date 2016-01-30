@@ -1,0 +1,59 @@
+<div layout="column" layout-align="center center" layout-margin>
+  <md-content layout-padding layout-margin layout-fill>
+    <md-subheader>
+      <md-icon md-svg-src="assets/images/icons/ic_person_add_black_32px.svg" class="grey"></md-icon>
+    </md-subheader>
+    <md-divider></md-divider><br/>
+    <form ng-submit="regCtrl.signup()" name="signupForm" id="signupForm">
+
+      <md-input-container class="md-icon-float md-block">
+        <label>Name</label>
+        <md-icon md-svg-src="assets/images/icons/ic_person_black_24px.svg" class="name"></md-icon>
+        <input  ng-minlength="3" ng-model="regCtrl.user.name" type="text" required name="fullname">
+        <div ng-messages="signupForm.fullname.$error" class="md-input-messages-animation md-auto-hide ng-active">
+          <div ng-message="required">This is required.</div>
+          <div ng-message="minlength">This must be atleast 3 characters long</div>
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-icon-float md-block">
+        <label>Email</label>
+        <md-icon md-svg-src="assets/images/icons/ic_email_black_24px.svg" class="name"></md-icon>
+        <input ng-model="regCtrl.user.email" type="email" required name="email">
+        <div ng-messages="signupForm.email.$error" class="md-input-messages-animation md-auto-hide ng-active">
+          <div ng-message="required">This is required.</div>
+          <div ng-message="minlength">This must be atleast 3 characters long</div>
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-icon-float md-block">
+        <label>Password</label>
+        <md-icon md-svg-src="assets/images/icons/ic_lock_black_24px.svg" class="name"></md-icon>
+        <input ng-model="regCtrl.user.password" type="password" required name="password" ng-minlength="6">
+        <div ng-messages="signupForm.password.$error" class="md-input-messages-animation md-auto-hide ng-active">
+          <div ng-message="required">This is required.</div>
+          <div ng-message="minlength">This must be atleast 6 characters long</div>
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-icon-float md-block">
+        <label>Confirm Password</label>
+        <md-icon md-svg-src="assets/images/icons/ic_lock_black_24px.svg" class="name"></md-icon>
+        <input
+          ng-model="regCtrl.user.re_password"
+          type="password" required ng-minlength="6"
+          name="re_password"
+          ui-validate=" '$value==regCtrl.user.password' "
+          ui-validate-watch=" 'regCtrl.user.password' "
+        >
+        <div ng-messages="signupForm.re_password.$error" class="md-input-messages-animation md-auto-hide ng-active">
+          <div ng-message="required">This is required.</div>
+          <div ng-message="minlength">This must be atleast 6 characters long</div>
+          <div ng-message="validator">Passwords do not match</div>
+        </div>
+      </md-input-container>
+
+      <md-button type="submit" class="md-block md-warn" ng-disabled="signupForm.$invalid">Submit</md-button>
+    </form>
+  </md-content>
+</div>
