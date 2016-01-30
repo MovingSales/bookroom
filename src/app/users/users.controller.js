@@ -33,6 +33,6 @@
   };
 
   angular.module('sysUsers')
-    .controller('UserSignUpController', signUpCtrl);
+    .controller('UsersController', signUpCtrl);
 
 })();
