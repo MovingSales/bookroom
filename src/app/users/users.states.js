@@ -11,7 +11,7 @@ var login = {
   parent: 'defaultView',
   url: '/login',
   templateUrl: 'app/users/login.html',
-  controller: 'UsersController'
+  controller: 'UsersController as loginCtrl'
 }
 
 angular.module('sysUsers')

@@ -4,16 +4,24 @@
 <div layout-align="column" layout-margin layout-padding>
   <md-content layout-margin layout-padding>
     <br/><br/>
-    <form role="form">
+    <form role="form" ng-submit="loginCtrl.signin()" name="loginForm" novalidate>
       <md-input-container class="md-icon-float md-block">
         <label>Email</label>
         <md-icon md-svg-src="assets/images/icons/ic_email_black_24px.svg" class="name"></md-icon>
-        <input type="email">
+        <input type="email" ng-model="loginCtrl.user.email" required name="email">
+        <div ng-messages="loginForm.email.$error" class="md-input-messages-animation md-auto-hide ng-active">
+          <div ng-message="required">This is required.</div>
+          <div ng-message="minlength">This must be atleast 3 characters long</div>
+        </div>
       </md-input-container>
       <md-input-container class="md-icon-float md-block">
         <label>Password</label>
         <md-icon md-svg-src="assets/images/icons/ic_lock_black_24px.svg" class="name"></md-icon>
-        <input type="password">
+        <input type="password" ng-model="loginCtrl.user.password" required name="password">
+        <div ng-messages="loginForm.password.$error" class="md-input-messages-animation md-auto-hide ng-active">
+          <div ng-message="required">This is required.</div>
+          <div ng-message="minlength">This must be atleast 6 characters long</div>
+        </div>
       </md-input-container>
       <md-button type="submit" class="md-warn">login</md-button>
     </form>

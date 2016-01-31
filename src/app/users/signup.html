@@ -1,10 +1,10 @@
-<div layout="column" layout-align="center center" layout-margin>
+<div layout="column" layout-align="center center" layout-margin layout-padding>
   <md-content layout-padding layout-margin layout-fill>
     <md-subheader>
       <md-icon md-svg-src="assets/images/icons/ic_person_add_black_32px.svg" class="grey"></md-icon>
     </md-subheader>
     <md-divider></md-divider><br/>
-    <form ng-submit="regCtrl.signup()" name="signupForm" id="signupForm">
+    <form ng-submit="regCtrl.signup()" name="signupForm" id="signupForm" novalidate>
 
       <md-input-container class="md-icon-float md-block">
         <label>Name</label>
