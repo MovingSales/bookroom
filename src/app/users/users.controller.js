@@ -14,15 +14,16 @@
     vm.signup = function (){
       authService.signup(vm.user.email, vm.user.password)
         .then(function (){
-          return vm.signin(vm.user.email, vm.user.password)
+          return vm.signin()
         })
         .catch(function (err) {
           $log.error(err);
         })
     };
 
-    vm.signin = function (email, password){
-      return authService.login(email, password)
+    vm.signin = function (){
+      console.log(vm.user)
+      return authService.login(vm.user.email, vm.user.password)
         .then(function (){
           $state.go('home')
         })
