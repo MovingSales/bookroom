@@ -23,7 +23,7 @@
           <div ng-message="minlength">This must be atleast 6 characters long</div>
         </div>
       </md-input-container>
-      <md-button type="submit" class="md-warn">login</md-button>
+      <md-button type="submit" class="md-warn" ng-disabled="loginForm.$invalid">login</md-button>
     </form>
   </md-content>
 </div>
