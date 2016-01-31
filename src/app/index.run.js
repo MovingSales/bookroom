@@ -1,14 +1,16 @@
-(function() {
-  'use strict';
+( function() {
 
-  angular
-    .module('bookroom')
-    .run(runBlock);
+	'use strict';
 
-  /** @ngInject */
-  function runBlock($log) {
+	angular
+	.module( 'bookroom' )
+	.run( runBlock );
 
-    $log.debug('runBlock end');
-  }
+	/** @ngInject */
+	function runBlock( $log ) {
 
-})();
+		$log.debug( 'runBlock end' );
+
+	}
+
+} )();

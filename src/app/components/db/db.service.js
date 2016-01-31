@@ -1,42 +1,50 @@
 
-(function (){
-  'use strict';
+( function() {
 
-  var dbService = function (pouchDB){
-    var db = pouchDB('http://localhost:5984/bookroom');
+	'use strict';
 
-    var _this = this;
+	var dbService = function( pouchDB ) {
 
-    _this.exportInstance = function (){
-      return db;
-    };
+		var db = pouchDB( 'http://localhost:5984/bookroom' );
 
-    _this.get = function (id){
+		var _this = this;
 
-    };
-    _this.query = function (view, queryOptions){
+		_this.exportInstance = function() {
 
-    };
+			return db;
 
-    _this.save = function (){
+		};
 
-    };
+		_this.get = function( id ) {
 
-    _this.saveMany = function (){
+		};
+		_this.query = function( view, queryOptions ) {
 
-    };
+		};
 
-    _this.update = function (){
+		_this.save = function() {
 
-    };
+		};
 
-    _this.delete = function (){
+		_this.saveMany = function() {
 
-    }
-  }
+		};
 
-  if(angular){
-    angular.module('db')
-      .service('dbService', dbService)
-  }
-})();
+		_this.update = function() {
+
+		};
+
+		_this.delete = function() {
+
+		};
+
+	};
+
+	if ( angular ) {
+
+		angular.module( 'db' )
+		.service( 'dbService', dbService );
+
+	}
+
+} )();

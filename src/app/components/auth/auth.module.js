@@ -1,8 +1,11 @@
-(function (){
-  'use strict';
+( function() {
 
-  if(angular){
-    angular.module('Auth', [])
-  }
+	'use strict';
 
-})()
+	if ( angular ) {
+
+		angular.module( 'Auth', [] );
+
+	}
+
+} )();

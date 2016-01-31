@@ -1,39 +1,53 @@
-(function () {
+( function() {
 
-  'use strict';
+	'use strict';
 
-  var signUpCtrl = function (userService, authService, $state, $log){
+	var signUpCtrl = function( userService, authService, $state, $log ) {
 
-    var vm = this;
-    vm.user = {};
+		var vm = this;
+		vm.user = {};
 
-    vm.canSignup = function (){
-      return (vm.user.password === vm.user.re_password) && (vm.user.password === vm.user.re_password);
-    };
+		vm.canSignup = function() {
 
-    vm.signup = function (){
-      authService.signup(vm.user.email, vm.user.password)
-        .then(function (){
-          return vm.signin()
-        })
-        .catch(function (err) {
-          $log.error(err);
-        })
-    };
+			return ( vm.user.password === vm.user.re_password ) && ( vm.user.password === vm.user.re_password );
 
-    vm.signin = function (){
-      console.log(vm.user)
-      return authService.login(vm.user.email, vm.user.password)
-        .then(function (){
-          $state.go('home')
-        })
-        .catch(function (err){
-          $log.error(err);
-        })
-    }
-  };
+		};
 
-  angular.module('sysUsers')
-    .controller('UsersController', signUpCtrl);
+		vm.signup = function() {
 
-})();
+			authService.signup( vm.user.email, vm.user.password )
+        .then( function() {
+
+	        return vm.signin();
+
+        } )
+        .catch( function( err ) {
+
+	        $log.error( err );
+
+        } );
+
+		};
+
+		vm.signin = function() {
+
+			return authService.login( vm.user.email, vm.user.password )
+        .then( function() {
+
+	        $state.go( 'home' );
+
+        } )
+        .catch( function( err ) {
+
+	        $log.error( err );
+
+        } );
+
+		};
+
+	};
+
+	angular.module( 'sysUsers' )
+	.controller( 'UsersController', signUpCtrl );
+
+} )();

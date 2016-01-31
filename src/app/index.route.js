@@ -1,30 +1,33 @@
-(function() {
-  'use strict';
+( function() {
 
-  angular
-    .module('bookroom')
-    .config(routerConfig);
+	'use strict';
 
-  /** @ngInject */
-  function routerConfig($stateProvider, $urlRouterProvider) {
-    $stateProvider
-      .state('root', {
-        abstract: true,
-        views: {
-          root: {
-            templateUrl: 'app/index.html'
-          }
-        }
-      })
-      .state('landing', {
-        parent: 'root',
-        url: '/',
-        templateUrl: 'app/landing/landing.html',
-        controller: 'MainController',
-        controllerAs: 'main'
-      });
+	angular
+	.module( 'bookroom' )
+	.config( routerConfig );
 
-    $urlRouterProvider.otherwise('/');
-  }
+	/** @ngInject */
+	function routerConfig( $stateProvider, $urlRouterProvider ) {
 
-})();
+		$stateProvider
+      .state( 'root', {
+	abstract: true,
+	views: {
+		root: {
+			templateUrl: 'app/index.html'
+		}
+	}
+      } )
+      .state( 'landing', {
+	parent: 'root',
+	url: '/',
+	templateUrl: 'app/landing/landing.html',
+	controller: 'MainController',
+	controllerAs: 'main'
+      } );
+
+		$urlRouterProvider.otherwise( '/' );
+
+	}
+
+} )();

@@ -1,38 +1,55 @@
-(function (){
-  'use strict';
+( function() {
 
-  var authService = function (dbService){
-    var _service = this;
-    var db = dbService.exportInstance();
+	'use strict';
 
-    _service.getUser = function (){
-      return db.getUser();
-    };
+	var authService = function( dbService ) {
 
-    _service.getSession = function (){
-      return db.getSession();
-    };
+		var _service = this;
+		var db = dbService.exportInstance();
 
-    _service.signup = function (username, password){
-      return db.signup(username, password)
-    };
+		_service.getUser = function() {
 
-    _service.login = function (username, password){
-      return db.login(username, password);
-    };
+			return db.getUser();
 
-    _service.logout = function (){
-      return db.logout();
-    };
+		};
 
-    _service.changePassword = function (username, password){
-      return db.changePassword(username, password);
-    }
-  };
+		_service.getSession = function() {
 
+			return db.getSession();
 
-  if(angular){
-    angular.module('Auth')
-      .service('authService', authService)
-  }
-})();
+		};
+
+		_service.signup = function( username, password ) {
+
+			return db.signup( username, password );
+
+		};
+
+		_service.login = function( username, password ) {
+
+			return db.login( username, password );
+
+		};
+
+		_service.logout = function() {
+
+			return db.logout();
+
+		};
+
+		_service.changePassword = function( username, password ) {
+
+			return db.changePassword( username, password );
+
+		};
+
+	};
+
+	if ( angular ) {
+
+		angular.module( 'Auth' )
+		.service( 'authService', authService );
+
+	}
+
+} )();

@@ -1,7 +1,9 @@
-(function() {
-  'use strict';
+( function() {
 
-  describe('controllers', function(){
+	'use strict';
 
-  });
-})();
+	describe( 'controllers', function() {
+
+	} );
+
+} )();

@@ -1,10 +1,11 @@
 /* global malarkey:false, moment:false */
-(function() {
-  'use strict';
+( function() {
 
-  angular
-    .module('bookroom')
-    .constant('malarkey', malarkey)
-    .constant('moment', moment);
+	'use strict';
 
-})();
+	angular
+	.module( 'bookroom' )
+	.constant( 'malarkey', malarkey )
+	.constant( 'moment', moment );
+
+} )();
