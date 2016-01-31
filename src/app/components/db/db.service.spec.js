@@ -1,16 +1,20 @@
 
-describe('db service', function(){
+describe( 'db service', function() {
 
-  var dbService;
+	var dbService;
 
-  beforeEach(module('db'));
+	beforeEach( module( 'db' ) );
 
-  beforeEach(inject(function (_dbService_){
-    dbService = _dbService_;
-  }));
+	beforeEach( inject( function( _dbService_ ) {
 
-  it('should expose a get function', function (){
-    expect(dbService.get).toBeTruthy()
-  });
+		dbService = _dbService_;
 
-});
+	} ) );
+
+	it( 'should expose a get function', function() {
+
+		expect( dbService.get ).toBeTruthy();
+
+	} );
+
+} );

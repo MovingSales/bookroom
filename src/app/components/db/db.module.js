@@ -1,10 +1,11 @@
 
-(function (){
-  'use strict';
+( function() {
 
-  angular.module('db', [
-    'pouchdb'
-  ])
-})();
+	'use strict';
 
+	angular.module( 'db', [
+	'pouchdb'
+	] );
+
+} )();
 

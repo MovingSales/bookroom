@@ -1,13 +1,14 @@
-(function() {
-  'use strict';
+( function() {
 
-  angular
-    .module('bookroom')
-    .controller('MainController', MainController);
+	'use strict';
 
-  /** @ngInject */
-  function MainController() {
+	angular
+	.module( 'bookroom' )
+	.controller( 'MainController', MainController );
 
+	/** @ngInject */
+	function MainController() {
 
-  }
-})();
+	}
+
+} )();

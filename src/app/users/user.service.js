@@ -1,16 +1,18 @@
 
-(function (module) {
-  'use strict';
+( function( module ) {
 
+	'use strict';
 
+	var userService = function( authService ) {
 
-  var userService = function (authService){
+		//authService.check()
+	};
 
-    //authService.check()
-  };
+	if ( angular ) {
 
-  if(angular){
-    angular.module(module)
-      .service('userService', userService)
-  }
-})('sysUsers')
+		angular.module( module )
+		.service( 'userService', userService );
+
+	}
+
+} )( 'sysUsers' );
