@@ -17,3 +17,5 @@ before_script:
   - npm install -g karma
   - bower install
   - gulp build
+after_success:
+  - npm run coveralls
