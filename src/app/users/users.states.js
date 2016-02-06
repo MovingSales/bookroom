@@ -7,6 +7,10 @@ var signupConfig = {
 	controller: 'UsersController as regCtrl'
 };
 
+var user = {
+  parent: 'defaultView',
+  abstract: true
+}
 var login = {
 	parent: 'defaultView',
 	url: '/login',
@@ -14,10 +18,16 @@ var login = {
 	controller: 'UsersController as loginCtrl'
 };
 
+var home = {
+  parent: 'defaultView',
+  url: '/user',
+  template: '<h1>User Home</h1>'
+}
+
 angular.module( 'sysUsers' )
   .config( function( $stateProvider ) {
-
-	$stateProvider.state( 'signup', signupConfig );
-	$stateProvider.state( 'login', login );
-
-  } );
+    $stateProvider.state('user', user);
+    $stateProvider.state( 'user.signup', signupConfig );
+    $stateProvider.state( 'user.login', login );
+    $stateProvider.state('user.home', home);
+  });

@@ -34,7 +34,7 @@
 			return authService.login( vm.user.email, vm.user.password )
         .then( function() {
 
-	        $state.go( 'home' );
+	        $state.go( 'user.home' );
 
         } )
         .catch( function( err ) {

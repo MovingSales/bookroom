@@ -16,7 +16,7 @@
     'sysUsers',
     'db',
     'Auth',
-    'userHome'
+    'user.home'
 	]);
 
 })();
