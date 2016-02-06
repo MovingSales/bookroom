@@ -50,7 +50,7 @@ module.exports = function(config) {
 
     ngHtml2JsPreprocessor: {
       stripPrefix: conf.paths.src + '/',
-      moduleName: 'bookroom'
+      moduleName: 'bookroom',
     },
 
     logLevel: 'WARN',
@@ -71,12 +71,25 @@ module.exports = function(config) {
       'karma-ng-html2js-preprocessor'
     ],
 
-    coverageReporter: {
-      type : 'html',
-      dir : 'coverage/'
+    reporters: [
+      'progress',
+      'coverage'
+    ],
+
+    preprocessors: {
+      'src/**/*.html': ['ng-html2js'],
+      'src/app/**/!(*.spec|*.mock).js': ['coverage']
     },
 
-    reporters: ['progress'],
+    coverageReporter: {
+      dir: 'coverage',
+      reporters: [
+        {
+          type: 'lcov',
+          subdir: 'lcov'
+        }
+      ]
+    },
 
     proxies: {
       '/assets/': path.join('/base/', conf.paths.src, '/assets/')
